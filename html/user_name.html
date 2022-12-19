@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <title>kafen User</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="logo">
+            <h1>Kafene</h1>
+        </div>
+        <div class="nav_bar">
+            <a href="../html/order_list.html" class="nav_link">orders</a>
+            <a href="../html/product_list.html" class="nav_link">products</a>
+            <a href="#" class="nav_link activeNav">users</a>
+        </div>
+        <div class="logOut" onclick="logout()">Logout</div>
+
+    </header>
+    <div class="container1">
+        <h2>Users</h2>
+
+        <form id="searchForm">
+            <input type="text" id="searchBox" autocomplete="off" placeholder="Search by Name">
+            <input type="submit" id="searchBtn" value="Reset">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User Avatar </th>
+                    <th>Full Name</th>
+                    <th>DoB</th>
+                    <th>Gender</th>
+                    <th>Current Location</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/user_name.js"></script>
+
+</body>
+
+</html>
+
+<!-- creator: vinay n shinde -->
